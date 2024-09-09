@@ -1,2 +1,3 @@
 # arreglos
-codigo de arreglos python y java 
+el codigo de python inicia creando una matriz de 12x4 ya con valores definidos seguido por medio de objetos genera funciones para buscar los datos en la matriz por medio de un if el cual limita el mes en 12 y el departamento en 3 y al darle los valores localiza la posición e imprime esta y lo mismo hace con la pasrte de eliminar los datos y al tenere estos valores vuelve a imprimir la nieva tabla actualizada con valores eliminados e insertados en java es mas complicado hacer la matriz lleva mas pasos y tambien se divide en dos secciones tanto la creacion del arreglo como su impresion basicamente hacen las mismas coasas solo que una es mas facil de redactar que la otra y lleva menos lineas de codigo.
+
