@@ -38,6 +38,14 @@ class Ventas:
       else:
             print("Mes o departamento fuera de rango.")
 
+    
+    def insertar_ventas(self, mes, departamento, cantidad):
+        """Inserta una nueva cantidad de ventas para un mes y departamento específicos."""
+        if 0 <= mes < 12 and 0 <= departamento < 3:
+            self.ventas[mes][departamento] = cantidad
+        else:
+            print("Mes o departamento fuera de rango.")
+
     def imprimir_ventas(self):
         
         print(f"{'Mes':<12} {'Ropa':<10} {'Deportes':<10} {'Juguetería':<10}")
@@ -66,3 +74,10 @@ ventas.eliminar_ventas(mes_eliminar,dep_eliminar)
 print("Ventas después de eliminar:")
 ventas.imprimir_ventas()
 
+print("insertar ventas:")
+mes_insertar = int(input("Ingrese el mes (0-11): "))
+dep_insertar = int(input("Ingrese el departamento (0: Ropa, 1: Deportes, 2: Juguetería): "))
+cantidad_insertar = int(input("Ingrese la cantidad de ventas: "))
+ventas.insertar_ventas(mes_insertar, dep_insertar, cantidad_insertar)
+print("Ventas después de insertar:")
+ventas.imprimir_ventas()
