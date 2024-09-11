@@ -40,7 +40,7 @@ class Ventas:
 
     
     def insertar_ventas(self, mes, departamento, cantidad):
-        """Inserta una nueva cantidad de ventas para un mes y departamento específicos."""
+        
         if 0 <= mes < 12 and 0 <= departamento < 3:
             self.ventas[mes][departamento] = cantidad
         else:
